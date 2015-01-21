@@ -1,7 +1,7 @@
 // QUESTION ONE
 // Show me how to calculate the average price of all items. Please console.log the average.
 // The output should be "The average price is $23.63"
-    console.log("The average price is $" + etsyItems.reduce(function(acc, item) { return acc + item.price; }, 0));
+    console.log("The average price is $" + Math.round( ((etsyItems.reduce(function(acc, item) { return acc + item.price; }, 0) / etsyItems.length) * 100)) / 100);
 
 
 // QUESTION TWO
